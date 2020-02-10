@@ -10,6 +10,12 @@ protocol CanFly {
     func fly()
 }
 
+extension CanFly {
+    func fly() {
+        print("The object takes off into the air")
+    }
+}
+
 class Bird {
     
     var isFemale = true
@@ -44,9 +50,9 @@ struct FlyingMuseum {
 }
 
 struct Airplane: CanFly {
-    func fly() {
-        print("The airplace uses its engine to lift off into the air")
-    }
+//    func fly() {
+//        print("The airplace uses its engine to lift off into the air")
+//    }
 }
 
 let myEagle = Eagle()
